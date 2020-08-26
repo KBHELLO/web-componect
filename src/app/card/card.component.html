@@ -1,0 +1,13 @@
+<div class="card card-design"
+     [ngClass]="{
+                  'background-danger' : bgClass === 'danger',
+                  'background-yellow' : bgClass === 'warn' ,
+                  'background-success' : bgClass === 'success',
+                  'background-info' : bgClass === 'info'}">
+  <h5 class="card-title" style="font-size: 2vw">{{heading}}</h5>
+  <h6 class="card-subtitle mb-2 text-muted" style="font-size: 1.1vw">{{subtitle}}</h6>
+  <h2 class="card-text">{{count}}</h2>
+  <button type="button"
+          class="btn btn-{{buttonType}}"
+          [style.display]="button ? 'block' : 'none'">{{buttonText}}</button>
+</div>

@@ -1,0 +1,60 @@
+<div class="card" style="padding: 20px;font-family: nunito">
+  <form [formGroup]="dateForm" style="padding: 10px;border: 1px solid lightgray; border-radius: 5px">
+    <div class="row" style="text-align: center">
+      <div class="col-lg-5 col-sm-12 col-md-5">
+        <div class="form-group">
+          <label for="startDate" class="bmd-label-floating"></label>
+          <input type="text" class="form-control" id="startDate" placeholder="Start Date" formControlName="dateFrom">
+        </div>
+      </div>
+      <div class="col-lg-5 col-sm-12 col-md-5">
+        <div class="form-group">
+          <label for="endDate" class="bmd-label-floating"></label>
+          <input type="text" class="form-control" id="endDate" placeholder="End date" formControlName="dateTo">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <button type="button" class="btn btn-outline-info btn-sm" style="margin-top: 11%">SUBMIT</button>
+      </div>
+    </div>
+  </form>
+  <div style="display: flex;justify-content: center; height: 50px">
+    <i class="fa fa-angle-left" style="font-size:30px" (click)="previous()"></i>
+    <div style="font-size: 20px;padding-left: 20px;padding-right: 20px">
+      {{monthNow.format('MMMM')}} {{monthNow.format('YYYY')}}
+    </div>
+    <i class="fa fa-angle-right" style="font-size:30px" (click)="nextMonth()"></i>
+  </div>
+  <div class="calendar">
+    <div class="flex-container flex-wrap" style="justify-content: center">
+      <div>Sunday</div>
+      <div>Monday</div>
+      <div>Tuesday</div>
+      <div>Wednesday</div>
+      <div>Thursday</div>
+      <div>Friday</div>
+      <div>Saturday</div>
+    </div>
+    <div>
+      <div class="flex-container flex-wrap" style="margin-left: 6%">
+        <div *ngFor="let day of daysArray;" (click)="selectedDay(day)">
+        <span [ngClass]="{
+                            'today-mark': todayCheck(day),
+                            'sunday-mark': sundayCheck(day),
+                            'selected' : isSelected(day)
+                          }">
+          {{day?.date()}}
+        </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="padding: 20px">
+    <h5>Events</h5>
+    <div *ngFor="let event of getEvents">
+      {{event['event_date']}}
+      {{event['event_description']}}
+      {{event['event_type']}}
+    </div>
+  </div>
+</div>

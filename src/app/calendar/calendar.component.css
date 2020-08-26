@@ -1,0 +1,41 @@
+.calendar{
+  font-size:1vw;
+  width: 62%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  border: 1px solid lightgray;
+  width: 70px;
+  text-align: center;
+  line-height: 60px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.sunday-mark{
+  padding: 10px;
+  color: white;
+  background: #ff5722;
+  border-radius: 5px;
+}
+
+.today-mark{
+  padding: 10px;
+  background: #03a9f4;
+  color: white;
+  border-radius: 5px;
+}
+
+.selected{
+  background: peru;
+  opacity: 0.6;
+  padding: 10px;
+  border-radius: 5px;
+}
+

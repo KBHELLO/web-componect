@@ -1,0 +1,12 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col" *ngFor="let col of colName">{{col}}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let value of colValue">
+    <th>{{value}}</th>
+  </tr>
+  </tbody>
+</table>

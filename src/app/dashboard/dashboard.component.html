@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row" style="margin-top: 2%">
+    <div class="col-md-3" style="margin-bottom: 2%">
+      <app-card [bgClass]="'danger'"
+                [heading]="'Orders'"
+                [subtitle]="'Management'">
+      </app-card>
+    </div>
+    <div class="col-md-3" style="margin-bottom: 2%;cursor: pointer">
+      <app-card [bgClass]="'warn'"
+                [heading]="'Inventory'"
+                [subtitle]="'Management'"
+                (click)="getCard('Inventory')"
+                style="cursor: pointer">
+      </app-card>
+    </div>
+    <div class="col-md-3" style="margin-bottom: 2%">
+      <app-card [bgClass]="'success'" [heading]="'CRM'" [subtitle]="'Management'"></app-card>
+    </div>
+    <div class="col-md-3" style="margin-bottom: 2%">
+      <app-card [bgClass]="'info'" [heading]="'Service Center'" [subtitle]="'Management'"></app-card>
+    </div>
+    <div class="col-md-3" style="margin-bottom: 2%">
+      <app-card [heading]="'Attendance'"
+                [subtitle]="'Management'"
+                [button]="true"
+                [buttonType]="'danger'"
+                [buttonText]="'Details'"
+                [count]="20"></app-card>
+    </div>
+  </div>
+  <div style="padding: 30px">
+    <app-form></app-form>
+  </div>
+</div>
+
+<app-calendar></app-calendar>
+

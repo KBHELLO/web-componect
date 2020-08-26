@@ -1,0 +1,54 @@
+{
+  "res": [
+    {
+      "event_date": "15/11/2019",
+      "event_description": "Event-3 Nov",
+      "event_type": "mandatory"
+    },
+    {
+      "event_date": "20/11/2019",
+      "event_description": "Event-4 Nov",
+      "event_type": "optional"
+    },
+    {
+      "event_date": "25/11/2019",
+      "event_description": "Event-5 Nov",
+      "event_type": "mandatory"
+    },
+    {
+      "event_date": "30/11/2019",
+      "event_description": "Event-6 Nov",
+      "event_type": "optional"
+    },
+    {
+      "event_date": "5/12/2019",
+      "event_description": "Event zero",
+      "event_type": "mandatory"
+    },
+    {
+      "event_date": "10/12/2019",
+      "event_description": "Event one",
+      "event_type": "optional"
+    },
+    {
+      "event_date": "15/12/2019",
+      "event_description": "Event two",
+      "event_type": "mandatory"
+    },
+    {
+      "event_date": "20/12/2019",
+      "event_description": "Event three",
+      "event_type": "optional"
+    },
+    {
+      "event_date": "25/12/2019",
+      "event_description": "Christmas Event",
+      "event_type": "mandatory"
+    },
+    {
+      "event_date": "1/1/2020",
+      "event_description": "New year",
+      "event_type": "mandatory"
+    }
+  ]
+}
